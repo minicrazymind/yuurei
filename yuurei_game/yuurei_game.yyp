@@ -1,7 +1,20 @@
 {
   "resources": [
+    {"id":{"name":"obj_zoella_hand","path":"objects/obj_zoella_hand/obj_zoella_hand.yy",},"order":2,},
+    {"id":{"name":"spr_zoella_idle","path":"sprites/spr_zoella_idle/spr_zoella_idle.yy",},"order":2,},
+    {"id":{"name":"obj_no_move","path":"objects/obj_no_move/obj_no_move.yy",},"order":5,},
+    {"id":{"name":"spr_basan","path":"sprites/spr_basan/spr_basan.yy",},"order":3,},
     {"id":{"name":"bg_sprite","path":"sprites/bg_sprite/bg_sprite.yy",},"order":0,},
+    {"id":{"name":"obj_grid_manager","path":"objects/obj_grid_manager/obj_grid_manager.yy",},"order":4,},
+    {"id":{"name":"spr_zoella_run","path":"sprites/spr_zoella_run/spr_zoella_run.yy",},"order":1,},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":7,},
+    {"id":{"name":"obj_basan","path":"objects/obj_basan/obj_basan.yy",},"order":3,},
     {"id":{"name":"bg_tiles","path":"tilesets/bg_tiles/bg_tiles.yy",},"order":0,},
+    {"id":{"name":"spr_no_move","path":"sprites/spr_no_move/spr_no_move.yy",},"order":5,},
+    {"id":{"name":"obj_zoella","path":"objects/obj_zoella/obj_zoella.yy",},"order":0,},
+    {"id":{"name":"obj_actor","path":"objects/obj_actor/obj_actor.yy",},"order":1,},
+    {"id":{"name":"spr_zoella_hand","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},"order":4,},
+    {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"order":6,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [

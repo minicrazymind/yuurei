@@ -1,0 +1,1 @@
+mp_grid_add_instances(PATH_GRID,obj_no_move,false) 
