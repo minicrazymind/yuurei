@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"obj_zoella_hand","path":"objects/obj_zoella_hand/obj_zoella_hand.yy",},"order":2,},
     {"id":{"name":"spr_zoella_idle","path":"sprites/spr_zoella_idle/spr_zoella_idle.yy",},"order":2,},
+    {"id":{"name":"MoveCollide","path":"scripts/MoveCollide/MoveCollide.yy",},"order":0,},
     {"id":{"name":"obj_no_move","path":"objects/obj_no_move/obj_no_move.yy",},"order":5,},
     {"id":{"name":"spr_basan","path":"sprites/spr_basan/spr_basan.yy",},"order":3,},
     {"id":{"name":"bg_sprite","path":"sprites/bg_sprite/bg_sprite.yy",},"order":0,},
