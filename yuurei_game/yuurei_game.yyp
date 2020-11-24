@@ -20,6 +20,7 @@
     {"id":{"name":"obj_actor","path":"objects/obj_actor/obj_actor.yy",},"order":1,},
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},"order":1,},
     {"id":{"name":"spr_zoella_hand","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},"order":4,},
+    {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},"order":9,},
     {"id":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"order":6,},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":0,},
   ],

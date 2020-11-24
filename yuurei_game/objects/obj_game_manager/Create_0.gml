@@ -1,0 +1,9 @@
+
+globalvar PLAYERHP;
+PLAYERHP = 400
+
+globalvar PLAYERMANA;
+PLAYERMANA = 132
+
+globalvar PLAYERMONEY;
+PLAYERMONEY = 0

@@ -7,19 +7,19 @@ if room == rm_game{
 	
 	//health
 	draw_set_color(c_black)
-	draw_rectangle(48,16, 432, 32, false)
+	draw_rectangle(interface_start,16, 432, 32, false)
 	draw_set_color(c_fuchsia)
 	
-	draw_rectangle(48,16, life_x, 32, false)
+	draw_rectangle(interface_start,16, life_x, 32, false)
 	
-	draw_text(8, 26, "HP")
+	draw_text(8, 26, "HP" + string(PLAYERHP))
 	
 	//mana
 	draw_set_color(c_black)
-	draw_rectangle(48,40, 432, 48, false)
+	draw_rectangle(interface_start,40, 432, 48, false)
 	draw_set_color(c_yellow)
 	
-	draw_rectangle(48,40, mana_x, 48, false)
+	draw_rectangle(interface_start,40, mana_x, 48, false)
 	
 	//gun box 
 	draw_set_color(c_gray)

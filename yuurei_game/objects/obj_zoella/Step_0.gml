@@ -34,4 +34,5 @@ if mouse_x > x {
 } else if mouse_x < x {
 	image_xscale = -1
 	facing_right = false
-}
+}	
+

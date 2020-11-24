@@ -11,3 +11,9 @@ move_right = false
 move_left = false
 
 is_moving = false
+
+
+x_remainder = 0
+y_remainder = 0
+
+bumped_into_something = false

@@ -1,3 +1,4 @@
+
 depth = -y
 
 x += xspd
@@ -13,7 +14,6 @@ if move_up {
 
 if move_right {
 	xspd = mspd
-	
 } else if move_left {
 	xspd = -mspd
 } else {
@@ -26,4 +26,7 @@ if yspd != 0 or xspd != 0 {
 	is_moving = false	
 }
 
-//MoveCollide();
+
+if is_moving {
+	MoveCollide();
+}
