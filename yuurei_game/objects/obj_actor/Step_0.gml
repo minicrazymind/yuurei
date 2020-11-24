@@ -26,4 +26,4 @@ if yspd != 0 or xspd != 0 {
 	is_moving = false	
 }
 
-MoveCollide();
+//MoveCollide();
