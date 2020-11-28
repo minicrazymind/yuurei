@@ -28,6 +28,14 @@ if room == rm_game { //Checks if the gun should be firing and if we're in rm_gam
 		ammo = max_ammo
 		reloading = false
 	}
+	
+	
+	if mouse_x > x {
+		image_xscale = 1
+	} else {
+		image_xscale = -1
+	}
+	
 }
 
 else {

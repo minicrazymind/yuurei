@@ -12,6 +12,7 @@ move_left = false
 
 is_moving = false
 
+facing_right = false
 
 x_remainder = 0
 y_remainder = 0
