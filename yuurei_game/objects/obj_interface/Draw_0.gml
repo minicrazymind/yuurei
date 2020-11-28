@@ -8,3 +8,4 @@ if room == rm_start{
 	draw_text(165, 476, "OPTIONS")
 	
 }
+

@@ -1,14 +1,14 @@
 
-moving_right = target.move_right
+moving_right = target.move_right      //We update these variables to know where the hand should be
 moving_left = target.move_left
 facing_right = target.facing_right
 
 
-y = target.y + 8
+y = target.y + 8     //Places the hand at an okay looking place
 
-if facing_right {
+if facing_right {    //However, the x pos changes as the player moves and changes direction
 	if moving_right {
-		x = target.bbox_right + 8
+		x = target.bbox_right + 8 //These numbers are micro tweaks to make the hand look better
 	} else if moving_left {
 		x = target.bbox_right
 	} else {
@@ -24,4 +24,5 @@ if facing_right {
 	}
 }
 
-depth = target.depth - 1
+depth = target.depth - 2  //Ensures that the hand is in front of the player
+                          //We also leave enough room for weapon to go in between

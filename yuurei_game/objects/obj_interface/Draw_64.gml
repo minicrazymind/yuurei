@@ -24,12 +24,20 @@ if room == rm_game{
 	//gun box 
 	draw_set_color(c_gray)
 	draw_roundrect(camera_x - 150, camera_y - 95, camera_x - 55, camera_y - 31, false)
-	draw_sprite(gun_spr, 0, camera_x-103, camera_y-64) //<-- code for when the gun shows up (center anchor)
+	draw_sprite_ext(gun_spr, 0, camera_x-103, camera_y-64, 2, 2, 0, -1, 1) //<-- code for when the gun shows up (center anchor)
 	
 	//pet box 
 	draw_set_color(c_gray)
 	draw_roundrect(150, camera_y - 95, 55, camera_y - 31, false)
-	draw_sprite(pet_spr, 0, 103, camera_y-63) //<-- code for when the pet shows up (center anchor)
+	draw_sprite_ext(pet_spr, 0, 103, camera_y-63, 2, 2, 0, -1, 1) //<-- code for when the pet shows up (center anchor)
+	
+	//ammo
+
+	for (i = 0; i < CURRWEAPON.ammo; i++) {
+		
+		draw_sprite_ext(gun_ammo, 0, camera_x-40, camera_y-140 - (40 * i), 2, 2, 0, -1, 1)
+	}
+
 	
 	if PAUSED{
 		draw_set_alpha(0.5)

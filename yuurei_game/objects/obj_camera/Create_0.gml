@@ -1,4 +1,4 @@
-//target = obj_zoella
+//target = CURRPLAYER
 
 cam = view_get_camera(view_current)
 

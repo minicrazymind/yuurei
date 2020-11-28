@@ -13,4 +13,11 @@ PLAYERMONEY = 0
 globalvar PAUSED; 
 PAUSED = false
 
+globalvar CURRPLAYER;
+CURRPLAYER = obj_zoella
 
+globalvar CURRWEAPON;
+CURRWEAPON = obj_shuriken_weapon
+
+globalvar CURRPET;
+CURRPET = obj_basan
