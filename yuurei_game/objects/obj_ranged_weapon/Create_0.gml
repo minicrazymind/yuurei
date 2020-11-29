@@ -1,4 +1,4 @@
-user = CURRPLAYER
+//user = CURRPLAYER
 user_hand = CURRPLAYER.hand
 
 
@@ -15,3 +15,5 @@ ammo = 10
 reload_speed = 60
 reload_timer = 0
 reloading = false
+
+ammo_dist = 20

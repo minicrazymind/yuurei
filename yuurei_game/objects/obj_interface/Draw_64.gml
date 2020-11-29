@@ -35,7 +35,7 @@ if room == rm_game{
 
 	for (i = 0; i < CURRWEAPON.ammo; i++) {
 		
-		draw_sprite_ext(gun_ammo, 0, camera_x-40, camera_y-140 - (40 * i), 2, 2, 0, -1, 1)
+		draw_sprite_ext(gun_ammo, 0, camera_x-40, camera_y-140 - (CURRWEAPON.ammo_dist * i), 2, 2, 0, -1, 1)
 	}
 
 	
