@@ -1,8 +1,14 @@
 
 depth = -y
+if (!place_meeting(x, y+yspd, obj_collidable)) {
+	y += yspd
+}
 
-x += xspd
-y += yspd
+if (!place_meeting(x+xspd, y, obj_collidable)) {
+	x += xspd
+}
+
+
 
 if move_up {
 	yspd = -mspd
@@ -27,6 +33,8 @@ if yspd != 0 or xspd != 0 {
 }
 
 
+/*
 if is_moving {
 	MoveCollide();
 }
+*/
