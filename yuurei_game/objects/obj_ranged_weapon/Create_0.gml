@@ -17,3 +17,5 @@ reload_timer = 0
 reloading = false
 
 ammo_dist = 20
+
+ability_activate = false

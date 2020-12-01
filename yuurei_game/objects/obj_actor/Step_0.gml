@@ -1,10 +1,10 @@
 
 depth = -y
-if (!place_meeting(x, y+yspd, obj_collidable)) {
+if (!place_meeting(x, y+yspd, obj_collidable)){
 	y += yspd
 }
 
-if (!place_meeting(x+xspd, y, obj_collidable)) {
+if (!place_meeting(x+xspd, y, obj_collidable)){
 	x += xspd
 }
 

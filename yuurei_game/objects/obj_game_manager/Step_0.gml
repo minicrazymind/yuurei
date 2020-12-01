@@ -14,7 +14,7 @@ if room == rm_game{
 			instance_activate_all()
 		}
 	}
-	if keyboard_check_pressed(ord("Q")) {
+	if keyboard_check_pressed(ord("Q")) { //NOTE TO SELF: Later, fix switching weapons so that ammo of prev wep is kept
 		if CURRWEAPON == obj_shuriken_weapon {
 			instance_create_depth(x,y,0,obj_spike_weapon)
 			CURRWEAPON = obj_spike_weapon

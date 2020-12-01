@@ -2,13 +2,18 @@
 depth = -y
 
 
-if point_distance(x,y,follow_targ.x,follow_targ.y) > 64{
+if point_distance(x,y,follow_targ.x,follow_targ.y) > 64 and point_distance(x,y,follow_targ.x,follow_targ.y) <= 220{
 
 	path_x = follow_targ.x
 	path_y = follow_targ.y
-	
+	mspd = 2
 	sprite_index = spr_byakko_run
 	 
+} else if point_distance(x,y,follow_targ.x,follow_targ.y) > 220 {
+	path_x = follow_targ.x
+	path_y = follow_targ.y
+	mspd = 6
+	sprite_index = spr_byakko_run
 } else{
 
 	path_x = x
