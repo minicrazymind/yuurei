@@ -27,9 +27,19 @@ if mp_grid_path(PATH_GRID,path,x,y,path_x,path_y,true){
 	path_start(path,mspd,path_action_stop,false)
 	 
 }
-
-if follow_targ.x > x {
-	image_xscale = 1	
-} else {
-	image_xscale = -1
+if room == rm_base{
+	image_yscale = 0.5
+	if follow_targ.x > x {
+		image_xscale = 0.5	
+	} else {
+		image_xscale = -0.5
+	}
+}
+else{
+	image_yscale = 1
+	if follow_targ.x > x {
+		image_xscale = 1	
+	} else {
+		image_xscale = -1
+	}
 }

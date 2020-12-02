@@ -28,11 +28,21 @@ if is_moving {
 	sprite_index = spr_zoella_idle
 }
 
-if mouse_x > x {
-	image_xscale = 1
-	facing_right = true
-} else if mouse_x < x {
-	image_xscale = -1
-	facing_right = false
-}	
-
+if room == rm_base {
+	if mouse_x > x {
+	    image_xscale = 0.5
+	    facing_right = true
+	} else if mouse_x < x {
+	    image_xscale = -0.5
+	    facing_right = false
+	}
+}
+else{
+	if mouse_x > x {
+		image_xscale = 1
+		facing_right = true
+	} else if mouse_x < x {
+		image_xscale = -1
+		facing_right = false
+	}	
+}
