@@ -7,3 +7,4 @@ path_y = y
 mspd = 1 
 
 follow_targ = CURRPLAYER
+       

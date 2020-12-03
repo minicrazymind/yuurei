@@ -52,3 +52,42 @@ if room == rm_game{
 		draw_text(camera_x/2 - 100, camera_y/2, "PAUSED")
 	}
 }
+
+if room == rm_base{
+	if BUYPET{
+		draw_set_alpha(0.5)
+		draw_set_color(c_black)
+		draw_rectangle(0, 0, camera_x, camera_y, false)
+		draw_set_alpha(0.75)
+		draw_set_color(c_fuchsia)
+		draw_roundrect(96, 66, camera_x - 96, camera_y - 66, false)
+		
+		draw_set_alpha(1)
+		draw_set_color(c_white)
+		draw_set_font(fnt_title_screen)
+		draw_text(camera_x/2 - 150, 71, "PET STORE")
+		
+		draw_sprite_ext(spr_basan , 0, 200, 200, 3, 3, 0, c_basan, 1)
+		frame_basan = instance_create_depth(200, 200, 0, obj_pet_frame)
+		frame_basan.item_name = "basan"
+		
+		draw_set_font(fnt_ingame_txt) 
+		draw_text(150, 270, "BASAN")
+		draw_text(150, 290, "15¥")
+		
+		draw_sprite_ext(spr_suzaku, 0, 375, 200, 3, 3, 0, c_suzaku, 1)
+		frame_suzaku = instance_create_depth(375, 200, 0, obj_pet_frame)
+		frame_suzaku.item_name = "suzaku"
+		
+		draw_text(325, 270, "SUZAKU")
+		draw_text(325, 290, "30¥")
+		
+		draw_sprite_ext(spr_byakko_idle, 0, 550, 200, 3, 3, 0, c_byakko, 1)
+		frame_byakko = instance_create_depth(550, 200, 0, obj_pet_frame)
+		frame_byakko.item_name = "byakko"
+		
+		draw_text(500, 270, "BYAKKO")
+		draw_text(500, 290, "45¥")
+		
+		}
+}

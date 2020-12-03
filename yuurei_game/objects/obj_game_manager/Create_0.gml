@@ -8,7 +8,7 @@ globalvar PLAYERMANA;
 PLAYERMANA = INTERFACESTART
 
 globalvar PLAYERMONEY;
-PLAYERMONEY = 0
+PLAYERMONEY = 1000
 
 globalvar PAUSED; 
 PAUSED = false
@@ -21,3 +21,6 @@ CURRWEAPON = obj_shuriken_weapon
 
 globalvar CURRPET;
 CURRPET = obj_basan
+
+globalvar BUYPET;
+BUYPET = false
