@@ -1,10 +1,8 @@
 
-path = path_add()
-
-path_x = x
-path_y = y
+event_inherited()
 
 mspd = 1 
 
-follow_targ = CURRPLAYER
-       
+
+run_spr = spr_basan
+idle_spr = spr_basan

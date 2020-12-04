@@ -20,19 +20,26 @@ if room == rm_game{
 			instance_activate_all()
 		}
 	}
+	
+	//DEV WEAPON SPAWNER
 	if keyboard_check_pressed(ord("Q")) { //NOTE TO SELF: Later, fix switching weapons so that ammo of prev wep is kept
-		if CURRWEAPON == obj_shuriken_weapon {
-			instance_create_depth(x,y,0,obj_spike_weapon)
-			CURRWEAPON = obj_spike_weapon
+		if CURRWEAPON.wep_name == "Shuriken" {
+			instance_destroy(CURRWEAPON)
+			CURRWEAPON = instance_create_depth(9000,9000,0,obj_spike_weapon)
 			obj_interface.gun_spr = spr_spike_weapon
 			obj_interface.gun_ammo = spr_spike_projectile
-			instance_destroy(obj_shuriken_weapon)	
-		} else if CURRWEAPON == obj_spike_weapon {
-			instance_create_depth(x,y,0,obj_shuriken_weapon)
-			CURRWEAPON = obj_shuriken_weapon
+				
+		} else if CURRWEAPON.wep_name == "Spike" {
+			instance_destroy(CURRWEAPON)	
+			CURRWEAPON = instance_create_depth(9000,9000,0,obj_dart_weapon)
+			obj_interface.gun_spr = spr_dart
+			obj_interface.gun_ammo = spr_dart
+			
+		} else if CURRWEAPON.wep_name == "Dart"{
+			instance_destroy(CURRWEAPON)
+			CURRWEAPON = instance_create_depth(9000,9000,0,obj_shuriken_weapon)
 			obj_interface.gun_spr = spr_shuriken
 			obj_interface.gun_ammo = spr_shuriken
-			instance_destroy(obj_spike_weapon)	
 		}
 	}
 }

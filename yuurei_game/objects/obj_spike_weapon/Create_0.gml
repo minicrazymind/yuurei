@@ -1,5 +1,6 @@
 event_inherited()
 
+wep_name = "Spike"
 
 attack_speed = 10                       //Controls how fast you can shoot
 projectile = obj_spike_projectile    //Which projectile it fires

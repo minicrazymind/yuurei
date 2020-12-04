@@ -1,6 +1,7 @@
 //user = CURRPLAYER
 user_hand = CURRPLAYER.hand
 
+wep_name = "Shuriken"
 
 
 ready_to_fire = true
@@ -16,6 +17,6 @@ reload_speed = 60
 reload_timer = 0
 reloading = false
 
-ammo_dist = 20
+ammo_dist = 20  //Seperation between bullets in the GUI
 
 ability_activate = false
