@@ -3,6 +3,12 @@ if keyboard_check_pressed(ord("M")) {
 	room_restart()	
 }
 
+
+if keyboard_check_pressed(ord("L")) {
+	room_goto(rm_start)
+}
+
+
 if room == rm_game{
 	if keyboard_check_pressed(vk_escape){
 		PAUSED = !PAUSED
