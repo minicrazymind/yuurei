@@ -9,6 +9,10 @@ if keyboard_check_pressed(ord("L")) {
 }
 
 
+if PLAYERHP < 0 { //Here just cuz lol
+	PLAYERHP = 0	
+}
+
 if room == rm_game{
 	if keyboard_check_pressed(vk_escape){
 		PAUSED = !PAUSED
@@ -36,6 +40,11 @@ if room == rm_game{
 			obj_interface.gun_ammo = spr_dart
 			
 		} else if CURRWEAPON.wep_name == "Dart"{
+			instance_destroy(CURRWEAPON)
+			CURRWEAPON = instance_create_depth(9000,9000,0,obj_mod_wep_1)
+			obj_interface.gun_spr = spr_lightning_weapon
+			obj_interface.gun_ammo = spr_spike_projectile
+		} else if CURRWEAPON.wep_name == "Mod_Wep_1" {
 			instance_destroy(CURRWEAPON)
 			CURRWEAPON = instance_create_depth(9000,9000,0,obj_shuriken_weapon)
 			obj_interface.gun_spr = spr_shuriken

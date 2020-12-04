@@ -9,15 +9,19 @@ if ability_activate {
 
 	_proj = instance_create_depth(x,y,depth,projectile)
 	_proj.direction = point_direction(_proj.x, _proj.y, _proj.x + 100, _proj.y)
+	_proj.is_bad = false
 	
 	_proj = instance_create_depth(x,y,depth,projectile)
 	_proj.direction = point_direction(_proj.x, _proj.y, _proj.x - 100, _proj.y)
+	_proj.is_bad = false
 	
 	_proj = instance_create_depth(x,y,depth,projectile)
 	_proj.direction = point_direction(_proj.x, _proj.y, _proj.x, _proj.y + 100)
+	_proj.is_bad = false
 	
 	_proj = instance_create_depth(x,y,depth,projectile)
 	_proj.direction = point_direction(_proj.x, _proj.y, _proj.x, _proj.y - 100)
+	_proj.is_bad = false
 	
 	ability_activate = false
 }

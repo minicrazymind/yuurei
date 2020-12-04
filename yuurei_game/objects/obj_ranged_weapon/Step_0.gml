@@ -1,11 +1,22 @@
 depth = user_hand.depth + 1   //Makes sure weapon is behind hand and in front of player sprite
 
 if room == rm_game { //Checks if the gun should be firing and if we're in rm_game
-	if mouse_check_button_pressed(mb_left) and ready_to_fire and ammo > 0{
+	
+	if mouse_check_button_pressed(mb_left) and is_enemy == false and ready_to_fire and ammo > 0{
 		ready_to_fire = false
 		attack_timer = attack_speed
 		ammo -= 1
-		instance_create_depth(x,y,depth,projectile)
+		bullet = instance_create_depth(x,y,depth,projectile)
+		bullet.is_bad = false
+	} else if is_enemy and is_triggered and ready_to_fire and ammo > 0 {
+		ready_to_fire = false
+		attack_timer = attack_speed
+		ammo -= 1
+		bullet = instance_create_depth(x,y,depth,projectile)
+		bullet.is_bad = true
+		bullet.direction = point_direction(bullet.x, bullet.y, CURRPLAYER.x, CURRPLAYER.y)
+		bullet.image_angle = point_direction(bullet.x, bullet.y, CURRPLAYER.x, CURRPLAYER.y)
+		is_triggered = false
 	}
 	
 	if ready_to_fire == false { //If shoot is on cooldown, countdown
@@ -16,10 +27,12 @@ if room == rm_game { //Checks if the gun should be firing and if we're in rm_gam
 	}
 	
 
-	if keyboard_check_pressed(ord("R")) {
+	if (keyboard_check_pressed(ord("R")) or is_reload) {
 		reload_timer = reload_speed
 		reloading = true
-		if ammo <= 0 {
+		is_reload = false
+		if ammo == 0 {
+			ammo = -1
 			ability_activate = true	
 		}
 	}
@@ -33,12 +46,24 @@ if room == rm_game { //Checks if the gun should be firing and if we're in rm_gam
 		reloading = false
 	}
 	
-	
-	if mouse_x > x {
-		image_xscale = 1
+	if is_enemy == false {
+		target_x = mouse_x
+		target_y = mouse_y
 	} else {
-		image_xscale = -1
+		target_x = CURRPLAYER.x
+		target_y = CURRPLAYER.y
 	}
+
+
+	
+	if target_x > x {
+		image_angle = point_direction(x, y, target_x, target_y)
+	} else {
+		image_angle = -point_direction(x, target_y, target_x, y)
+	}
+	
+	
+	
 	
 }
 

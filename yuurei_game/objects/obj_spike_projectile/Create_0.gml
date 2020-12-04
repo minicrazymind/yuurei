@@ -4,7 +4,7 @@
 target_x = mouse_x  //Target's x and y
 target_y = mouse_y
 
-speed = 11      //Move speed of projectile
+speed = 8      //Move speed of projectile
 
 damage = 4
 

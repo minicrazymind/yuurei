@@ -1,9 +1,12 @@
 event_inherited()
 
-facing_right = false
 
-curr_hand = instance_create_depth(x, y, 0, obj_enemy_1_hand)
+hand = instance_create_depth(x, y, 0, obj_enemy_1_hand)
+hand.target = id
 
-hand = curr_hand
+weapon = instance_create_depth(x, y, 0, obj_dart_weapon)
+weapon.user_hand = hand
+weapon.is_enemy = true
 
-curr_hand.target = self
+idle_spr = spr_enemy_1_idle
+run_spr = spr_enemy_1_run

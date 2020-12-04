@@ -20,3 +20,11 @@ reloading = false
 ammo_dist = 20  //Seperation between bullets in the GUI
 
 ability_activate = false
+
+is_triggered = false
+is_reload = false
+
+is_enemy = false
+
+target_x = mouse_x
+target_y = mouse_y

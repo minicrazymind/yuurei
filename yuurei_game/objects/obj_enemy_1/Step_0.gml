@@ -1,20 +1,13 @@
 
 event_inherited();
 
-
-
-if is_moving {
-	sprite_index = spr_enemy_1_run
-} else {
-	sprite_index = spr_enemy_1_idle
+if attack {
+	weapon.is_triggered = true
 }
 
-if mouse_x > x {
-	image_xscale = 1
-	facing_right = true
-} else if mouse_x < x {
-	image_xscale = -1
-	facing_right = false
-}	
 
-
+if hp <= 0 {
+	instance_destroy(hand)
+	instance_destroy(weapon)
+	instance_destroy()	
+}
