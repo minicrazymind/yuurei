@@ -5,7 +5,7 @@ y = user_hand.y - 3
 
 if ability_activate {
 		
-	for (i = 0; i < 1000; i++) {
+	for (i = 0; i < 100; i++) {
 		rand_x = irandom(room_width)
 		rand_y = irandom(room_height)
 		_proj = instance_create_depth(x,y,depth,projectile)
@@ -14,7 +14,7 @@ if ability_activate {
 		_proj.is_bad = false
 	}
 	
-	for (i = 0; i < 500; i++) {
+	for (i = 0; i < 100; i++) {
 		rand_x = irandom(room_width)
 		rand_y = irandom(room_height)
 		_proj = instance_create_depth(x,y,depth,obj_shuriken_projectile)
@@ -24,7 +24,7 @@ if ability_activate {
 	}
 	
 	
-	for (i = 0; i < 1000; i++) {
+	for (i = 0; i < 100; i++) {
 		rand_x = irandom(room_width)
 		rand_y = irandom(room_height)
 		_proj = instance_create_depth(x,y,depth,obj_spike_projectile)

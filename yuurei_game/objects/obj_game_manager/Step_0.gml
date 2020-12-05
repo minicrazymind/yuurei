@@ -57,5 +57,22 @@ if room == rm_start {
 	if keyboard_check_pressed(vk_space) {
 		room_goto(rm_game)
 	}
+	if keyboard_check_pressed(vk_enter) {
+		room_goto(rm_base)
+	}
+}
+
+if room == rm_base{
+	if BUYPET{
+		if keyboard_check_pressed(vk_escape){
+			BUYPET = false
+		}
+	}
+	
+	if BUYWEAPON{
+		if keyboard_check_pressed(vk_escape){
+			BUYWEAPON = false
+		}
+	}
 }
 

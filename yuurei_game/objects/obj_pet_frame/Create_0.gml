@@ -1,3 +1,3 @@
-item_name = "basan"
+item_name = ""
 
-show_debug_message("hi!")
+//show_debug_message(item_name)

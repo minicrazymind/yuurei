@@ -24,3 +24,6 @@ CURRPET = obj_basan
 
 globalvar BUYPET;
 BUYPET = false
+
+globalvar BUYWEAPON;
+BUYWEAPON = false
