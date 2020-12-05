@@ -65,7 +65,10 @@ if room == rm_base{
 		draw_set_alpha(1)
 		draw_set_color(c_white)
 		draw_set_font(fnt_title_screen)
-		draw_text(camera_x/2 - 150, 71, "PET STORE")
+		draw_text(camera_x/2 - 150, 95, "PET STORE")
+		
+		//need to edit actual money placement to be relative to the length of the num
+		draw_text(camera_x - 250, 95, PLAYERMONEY)
 		
 		draw_sprite_ext(spr_basan, 0, 200, 200, 3, 3, 0, c_basan, 1)
 		
@@ -83,23 +86,13 @@ if room == rm_base{
 		draw_text(500, 270, "BYAKKO")
 		draw_text(500, 290, "45¥")
 		
+		draw_sprite_ext(spr_boxboy_idle, 0, 725, 200, 3, 3, 0, c_boxboy, 1)
+		
+		draw_text(675, 270, "BOXBOY")
+		draw_text(675, 290, "100¥")
+		
 		draw_sprite(spr_pet_frame, 0, obj_nekoi.selector_x, 195)
-		show_debug_message(obj_nekoi.selector_x)
-		
-		if keyboard_check_pressed(ord("D")) and obj_nekoi.selector_x < max_x and timer == 0{
-			obj_nekoi.selector_x += 175
-			timer = 60
-			}
-			//add in sfx for else
-		if keyboard_check_pressed(ord("A")) and min_x < obj_nekoi.selector_x and timer == 0{
-			obj_nekoi.selector_x -= 175
-			timer = 60
-		}
-		
-		if timer > 0{
-			timer -= 1
-		}
-		//add in sfx for else
+		//show_debug_message(obj_nekoi.selector_x)
 		}
 		
 	if BUYWEAPON{
@@ -113,38 +106,28 @@ if room == rm_base{
 		draw_set_alpha(1)
 		draw_set_color(c_white)
 		draw_set_font(fnt_title_screen)
-		draw_text(camera_x/2 - 150, 71, "WEAPON STORE")
+		draw_text(camera_x/2 - 175, 95, "WEAPON STORE")
 		
-		draw_sprite_ext(spr_spike_weapon, 0, 200, 200, 3, 3, 0, c_white, 1)
+		//need to edit actual money placement to be relative to the length of the num
+		draw_text(camera_x - 250, 95, PLAYERMONEY)
+		
+		draw_sprite_ext(spr_spike_weapon, 0, 200, 200, 3, 3, 0, c_spike, 1)
 		
 		draw_set_font(fnt_ingame_txt) 
 		draw_text(150, 270, "SPIKES")
 		draw_text(150, 290, "15¥")
 		
-		draw_sprite_ext(spr_shuriken, 0, 375, 200, 3, 3, 0, c_white, 1)
+		draw_sprite_ext(spr_shuriken, 0, 375, 200, 3, 3, 0, c_shuriken, 1)
 
-		draw_text(325, 270, "ELECTRIC SHURIKEN")
+		draw_text(325, 270, "E.SHURIKEN")
 		draw_text(325, 290, "30¥")
 		
-		draw_sprite_ext(spr_lightning_weapon, 0, 550, 200, 3, 3, 0, c_white, 1)
+		draw_sprite_ext(spr_lightning_weapon, 0, 550, 200, 3, 3, 0, c_lightning, 1)
 		
 		draw_text(500, 270, "LIGHTNING")
 		draw_text(500, 290, "45¥")
 		
 		draw_sprite(spr_pet_frame, 0, obj_shopkeeper.selector_x_w, 195)
-		
-		if keyboard_check_pressed(ord("D")) and obj_shopkeeper.selector_x_w < max_x and timer == 0{
-			obj_shopkeeper.selector_x_w += 175
-			timer = 60
-			}
-			//add in sfx for else
-		if keyboard_check_pressed(ord("A")) and min_x < obj_shopkeeper.selector_x_w and timer == 0{
-			obj_shopkeeper.selector_x_w -= 175
-			timer = 60
-		}
-		//add in sfx for else
-		}
-		if timer > 0{
-			timer -= 1
+
 		}
 		}
