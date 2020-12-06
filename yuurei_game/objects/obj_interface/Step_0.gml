@@ -127,3 +127,20 @@ if BUYPET{
 	}
 	//sfx if curr_pet == CURRPET
 }
+
+
+if room == rm_start{
+	if point_in_rectangle(mouse_x, mouse_y, 160,453,325,503){
+		c_start = c_yellow
+		c_options = c_white
+	}
+		
+	else if point_in_rectangle(mouse_x, mouse_y, 165,526, 390, 576){
+		c_start = c_white
+		c_options = c_yellow
+	}
+	else{
+		c_start = c_white
+		c_options = c_white
+	}
+}

@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6519fe1d-8d5a-4e6c-aac4-070d199f05b5","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6519fe1d-8d5a-4e6c-aac4-070d199f05b5","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},"LayerId":{"name":"47f2356c-6a46-47ff-869b-0ccd80786c39","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_zoella_hand","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},"resourceVersion":"1.0","name":"6519fe1d-8d5a-4e6c-aac4-070d199f05b5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3f469ed4-333e-4803-97ae-accc9f89d6fb","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3f469ed4-333e-4803-97ae-accc9f89d6fb","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},"LayerId":{"name":"c0f66686-4775-4afb-a419-de191770fd98","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_zoella_hand","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},"resourceVersion":"1.0","name":"3f469ed4-333e-4803-97ae-accc9f89d6fb","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_zoella_hand","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3d45e7fa-77e1-4539-b865-6e5cb25485d5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6519fe1d-8d5a-4e6c-aac4-070d199f05b5","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1f5a503a-621b-4bc8-8da1-a5edb3c20ad3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3f469ed4-333e-4803-97ae-accc9f89d6fb","path":"sprites/spr_zoella_hand/spr_zoella_hand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"47f2356c-6a46-47ff-869b-0ccd80786c39","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c0f66686-4775-4afb-a419-de191770fd98","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",

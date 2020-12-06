@@ -52,7 +52,7 @@ if room == rm_game{
 		}
 	}
 }
-
+/*
 if room == rm_start {
 	if keyboard_check_pressed(vk_space) {
 		room_goto(rm_game)
@@ -61,7 +61,7 @@ if room == rm_start {
 		room_goto(rm_base)
 	}
 }
-
+*/
 if room == rm_base{
 	if BUYPET{
 		if keyboard_check_pressed(vk_escape){
@@ -72,6 +72,18 @@ if room == rm_base{
 	if BUYWEAPON{
 		if keyboard_check_pressed(vk_escape){
 			BUYWEAPON = false
+		}
+	}
+}
+
+if room == rm_start{
+	if mouse_check_button_pressed(mb_left){
+		if point_in_rectangle(mouse_x, mouse_y, 160,453,325,503){ //start
+			room_goto(rm_game)
+		}
+		
+		else if point_in_rectangle(mouse_x, mouse_y, 165,526, 390, 576){ //options
+			room_goto(rm_base)
 		}
 	}
 }

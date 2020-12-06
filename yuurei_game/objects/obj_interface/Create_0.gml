@@ -13,3 +13,7 @@ curr_pet = obj_basan
 
 money_spent = 0
 
+c_start = c_white
+
+c_options = c_white
+

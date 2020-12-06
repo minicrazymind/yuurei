@@ -3,12 +3,14 @@ moving_right = target.move_right      //We update these variables to know where 
 moving_left = target.move_left
 facing_right = target.facing_right
 
+image_xscale = 0.5
+image_yscale = 0.5
 
-y = target.y + 8     //Places the hand at an okay looking place
+y = target.y + 6     //Places the hand at an okay looking place
 
 if facing_right {    //However, the x pos changes as the player moves and changes direction
 	if moving_right {
-		x = target.bbox_right + 8 //These numbers are micro tweaks to make the hand look better
+		x = target.bbox_right + 4 //These numbers are micro tweaks to make the hand look better
 	} else if moving_left {
 		x = target.bbox_right
 	} else {
@@ -18,7 +20,7 @@ if facing_right {    //However, the x pos changes as the player moves and change
 	if moving_right {
 		x = target.bbox_left
 	} else if moving_left {
-		x = target.bbox_left - 6
+		x = target.bbox_left - 4
 	} else {
 		x = target.bbox_left
 	}

@@ -30,9 +30,4 @@ if yspd != 0 or xspd != 0 {
 	is_moving = false	
 }
 
-if room == rm_base{
-    image_yscale = 0.5
-}
-else{
-	image_yscale = 1
-}
+image_yscale = 0.5
