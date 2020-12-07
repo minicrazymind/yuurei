@@ -27,7 +27,7 @@ if room == rm_game { //Checks if the gun should be firing and if we're in rm_gam
 	}
 	
 
-	if (keyboard_check_pressed(ord("R")) or is_reload) {
+	if (keyboard_check_pressed(ord("R")) or is_reload) and ammo >= 0 {
 		reload_timer = reload_speed
 		reloading = true
 		is_reload = false

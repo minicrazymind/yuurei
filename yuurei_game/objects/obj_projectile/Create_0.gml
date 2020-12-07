@@ -7,6 +7,8 @@ speed = 5      //Move speed of projectile
 
 damage = 10
 
+
 direction = point_direction(x, y, target_x, target_y) //Direction we go
 
 image_angle = direction
+

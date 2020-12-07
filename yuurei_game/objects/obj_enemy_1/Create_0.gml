@@ -10,3 +10,6 @@ weapon.is_enemy = true
 
 idle_spr = spr_enemy_1_idle
 run_spr = spr_enemy_1_run
+
+attack_timer = 200
+max_attack_timer = 200

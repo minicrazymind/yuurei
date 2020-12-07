@@ -1,12 +1,9 @@
 if room == rm_game{
-	mspd = 2
+	mspd = 6
 }
 else if room == rm_base{
-	mspd = 0.25
+	mspd = 0.5
 }
-
-xspd = 0
-yspd = 0
 
 
 move_up = false
@@ -18,7 +15,14 @@ is_moving = false
 
 facing_right = false
 
+
+
+move_dir = 0
+
 x_remainder = 0
 y_remainder = 0
 
 bumped_into_something = false
+
+run_spr = spr_zoella_run
+idle_spr = spr_zoella_idle

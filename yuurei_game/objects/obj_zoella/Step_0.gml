@@ -22,11 +22,7 @@ if !BUYPET and !BUYWEAPON{
 		move_right = false
 	}
 
-	if is_moving {
-		sprite_index = spr_zoella_run
-	} else {
-		sprite_index = spr_zoella_idle
-	}
+
 
 	if mouse_x > x {
 		image_xscale = 0.5

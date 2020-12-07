@@ -2,11 +2,13 @@
 depth = -y
 
 
-if point_distance(x,y,follow_targ.x,follow_targ.y) > 200{
+if point_distance(x,y,follow_targ.x,follow_targ.y) > 160{
 
 	path_x = follow_targ.x
 	path_y = follow_targ.y
-	cur_mspd = mspd
+	if cur_mspd < mspd {
+		cur_mspd += 0.1
+	}
 	sprite_index = run_spr
 	
 	is_near = true
@@ -42,13 +44,16 @@ if mp_grid_path(PATH_GRID,path,x,y,path_x,path_y,true){
 	path_start(path,cur_mspd,path_action_stop,false)
 }	 
 
+
+image_yscale = 0.5
+
 if follow_targ.x > x {
-	image_xscale = 1	
+	image_xscale = 0.5	
 	move_left = false
 	move_right = true
 	facing_right = true
 } else {
-	image_xscale = -1
+	image_xscale = -0.5
 	move_left = true
 	move_right = false
 	facing_right = false

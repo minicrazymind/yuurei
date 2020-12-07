@@ -10,3 +10,4 @@ max_ammo = 27
 ammo_dist = 20
 
 ability_activate = false
+reload_speed = 90

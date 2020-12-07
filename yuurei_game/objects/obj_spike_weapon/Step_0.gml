@@ -15,7 +15,7 @@ if room == rm_game { //Checks if the gun should be firing and if we're in rm_gam
 			_proj2 = instance_create_depth(x,y,depth,projectile)
 			_proj2.direction = point_direction(_proj2.x, _proj2.y, _proj2.target_x-50, _proj2.target_y-50)
 			_proj2.is_bad = false
-			_proj2.image_angle = point_direction(_proj1.x, _proj1.y, _proj1.target_x-50, _proj1.target_y+50)
+			_proj2.image_angle = point_direction(_proj1.x, _proj1.y, _proj1.target_x-50, _proj1.target_y-50)
 			_proj3 = instance_create_depth(x,y,depth,projectile)
 			_proj3.is_bad = false
 		}
@@ -26,7 +26,7 @@ if room == rm_game { //Checks if the gun should be firing and if we're in rm_gam
 			_proj1.is_bad = false
 			_proj2 = instance_create_depth(x,y,depth,projectile)
 			_proj2.direction = point_direction(_proj2.x, _proj2.y, _proj2.target_x-10, _proj2.target_y-10)
-			_proj2.image_angle = point_direction(_proj1.x, _proj1.y, _proj1.target_x-10, _proj1.target_y+10)
+			_proj2.image_angle = point_direction(_proj1.x, _proj1.y, _proj1.target_x-10, _proj1.target_y-10)
 			_proj2.is_bad = false
 			_proj3 = instance_create_depth(x,y,depth,projectile)	
 			_proj3.is_bad = false
@@ -62,9 +62,9 @@ if room == rm_game { //Checks if the gun should be firing and if we're in rm_gam
 	
 	
 	if mouse_x > x {
-		image_xscale = 1
+		image_xscale = 0.5
 	} else {
-		image_xscale = -1
+		image_xscale = -0.5
 	}
 	
 	

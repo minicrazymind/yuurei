@@ -6,7 +6,7 @@ facing_right = target.facing_right
 image_xscale = 0.5
 image_yscale = 0.5
 
-y = target.y + 6     //Places the hand at an okay looking place
+y = target.y + 4     //Places the hand at an okay looking place
 
 if facing_right {    //However, the x pos changes as the player moves and changes direction
 	if moving_right {

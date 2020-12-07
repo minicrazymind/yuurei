@@ -12,3 +12,7 @@ ammo_dist = 25
 ability_activate = false
 
 reload_speed = 120
+
+extra_bullet = false
+extra_bullet_timer = 0
+extra_bullet_time = 15

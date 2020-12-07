@@ -1,33 +1,47 @@
 depth = -y
 
-if (!place_meeting(x, y+yspd, obj_collidable)){
-	y += yspd
-}
+if move_up{		// 90 degree angle to move up
+	move_dir = 90
+	if move_left{
+		move_dir += 45				// +45 for up-left
+	}else if move_right{
+		move_dir -= 45				// -45 for up-right
+	} 
+	sprite_index = run_spr
+}else if move_down{
+	move_dir = 270					// 270 degree angle to move down
+	if move_left{
+		move_dir -= 45				// -45 for down-left
+	}else if move_right{
+		move_dir += 45				// +45 for down-right
+	} 
+	sprite_index = run_spr
+}else{	
+	if move_left{
+		move_dir = 180				// 180 degree angle to move left
+		sprite_index = run_spr
+	}else if move_right{
+		move_dir = 0				// 0 degrees to move right
+		sprite_index = run_spr
 
-if (!place_meeting(x+xspd, y, obj_collidable)){
-	x += xspd
+	} else {
+		sprite_index = idle_spr
+	}
 }
+hspd = lengthdir_x(mspd,move_dir)	// find x&y speed by using angle and base speed
+vspd = lengthdir_y(mspd,move_dir)
 
-if move_up {
-	yspd = -mspd
-} else if move_down {
-	yspd = mspd
-} else {
-	yspd = 0
-}
-
-if move_right {
-	xspd = mspd
-} else if move_left {
-	xspd = -mspd
-} else {
-	xspd = 0
-}
-
-if yspd != 0 or xspd != 0 {
-	is_moving = true	
+if move_up
+or move_left
+or move_down
+or move_right{		// if pressing any move keys, move player!
+	MoveCollide()
+	is_moving = true
 } else {
 	is_moving = false	
 }
+
+
+
 
 image_yscale = 0.5
