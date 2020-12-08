@@ -31,5 +31,10 @@ if !BUYPET and !BUYWEAPON{
 		image_xscale = -0.5
 		facing_right = false
 	}	
+} else {
+	move_up = false   //Player no longer keeps moving when shop opens
+	move_down = false
+	move_left = false
+	move_right = false
 }
 

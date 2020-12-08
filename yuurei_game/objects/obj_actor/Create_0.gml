@@ -1,10 +1,4 @@
-if room == rm_game{
-	mspd = 6
-}
-else if room == rm_base{
-	mspd = 0.5
-}
-
+mspd = 3
 
 move_up = false
 move_down = false
@@ -15,7 +9,8 @@ is_moving = false
 
 facing_right = false
 
-
+hspd = 0
+vspd = 0
 
 move_dir = 0
 

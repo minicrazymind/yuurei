@@ -66,16 +66,28 @@ if BUYWEAPON{
 		case 200:
 			curr_weapon = obj_spike_weapon
 			money_spent = 15
+			if curr_weapon != CURRWEAPON {
+				instance_destroy(CURRWEAPON)
+				CURRWEAPON = instance_create_depth(9000,9000,0,curr_weapon)
+			}
 			break;
 			
 		case 375:
 			curr_weapon = obj_shuriken_weapon
 			money_spent = 30
+			if curr_weapon != CURRWEAPON {
+				instance_destroy(CURRWEAPON)
+				CURRWEAPON = instance_create_depth(9000,9000,0,curr_weapon)
+			}
 			break;
 		
 		case 550:
 			curr_weapon = obj_mod_wep_1
-			money_spent = 45
+			money_spent = 500
+			if curr_weapon != CURRWEAPON {
+				instance_destroy(CURRWEAPON)
+				CURRWEAPON = instance_create_depth(9000,9000,0,curr_weapon)
+			}
 			break;
 	}
 	

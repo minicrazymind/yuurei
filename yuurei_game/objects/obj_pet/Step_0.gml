@@ -12,7 +12,7 @@ if point_distance(x,y,follow_targ.x,follow_targ.y) > 64 and point_distance(x,y,f
 } else if point_distance(x,y,follow_targ.x,follow_targ.y) > 300 {
 	path_x = follow_targ.x
 	path_y = follow_targ.y
-	if cur_mspd < mspd * 3 {
+	if cur_mspd < follow_targ.mspd + 1 {
 		cur_mspd += 0.05
 	}
 	
@@ -30,19 +30,11 @@ if mp_grid_path(PATH_GRID,path,x,y,path_x,path_y,true){
 	path_start(path,cur_mspd,path_action_stop,false)
 	 
 }
-if room == rm_base{
-	image_yscale = 0.5
-	if follow_targ.x > x {
-		image_xscale = 0.5	
-	} else {
-		image_xscale = -0.5
-	}
-}
-else{
-	image_yscale = 1
-	if follow_targ.x > x {
-		image_xscale = 1	
-	} else {
-		image_xscale = -1
-	}
+
+
+image_yscale = 0.5
+if follow_targ.x > x {
+	image_xscale = 0.5	
+} else {
+	image_xscale = -0.5
 }

@@ -49,7 +49,6 @@
     {"id":{"name":"spr_boxboy_run","path":"sprites/spr_boxboy_run/spr_boxboy_run.yy",},"order":31,},
     {"id":{"name":"obj_suzaku","path":"objects/obj_suzaku/obj_suzaku.yy",},"order":20,},
     {"id":{"name":"spr_shopkeeper","path":"sprites/spr_shopkeeper/spr_shopkeeper.yy",},"order":27,},
-    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":7,},
     {"id":{"name":"obj_basan","path":"objects/obj_basan/obj_basan.yy",},"order":3,},
     {"id":{"name":"spr_buildings1","path":"sprites/spr_buildings1/spr_buildings1.yy",},"order":19,},
     {"id":{"name":"spr_shuriken","path":"sprites/spr_shuriken/spr_shuriken.yy",},"order":7,},
@@ -99,10 +98,10 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
+    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"roomId":{"name":"rm_base","path":"rooms/rm_base/rm_base.yy",},},
     {"roomId":{"name":"rm_game_debug","path":"rooms/rm_game_debug/rm_game_debug.yy",},},
     {"roomId":{"name":"rm_game_2","path":"rooms/rm_game_2/rm_game_2.yy",},},
-    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

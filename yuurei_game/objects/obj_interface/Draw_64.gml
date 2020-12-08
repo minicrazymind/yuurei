@@ -93,9 +93,9 @@ if room == rm_base{
 		
 		draw_sprite(spr_pet_frame, 0, obj_nekoi.selector_x, 195)
 		//show_debug_message(obj_nekoi.selector_x)
-		}
+	}
 		
-	if BUYWEAPON{
+	if BUYWEAPON {
 		draw_set_alpha(0.5)
 		draw_set_color(c_black)
 		draw_rectangle(0, 0, camera_x, camera_y, false)
@@ -125,9 +125,9 @@ if room == rm_base{
 		draw_sprite_ext(spr_lightning_weapon, 0, 550, 200, 3, 3, 0, c_lightning, 1)
 		
 		draw_text(500, 270, "LIGHTNING")
-		draw_text(500, 290, "45¥")
+		draw_text(500, 290, "500¥")
 		
 		draw_sprite(spr_pet_frame, 0, obj_shopkeeper.selector_x_w, 195)
 
-		}
-		}
+	}
+}
