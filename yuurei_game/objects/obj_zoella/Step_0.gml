@@ -1,4 +1,13 @@
 event_inherited()
+
+if room == rm_game{
+	mspd = 2
+}
+else if room == rm_base{
+	mspd = 1.5
+}
+
+
 if !BUYPET and !BUYWEAPON{
 	if keyboard_check(ord("W")) {
 		move_up = true

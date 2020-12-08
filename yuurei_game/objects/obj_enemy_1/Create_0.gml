@@ -13,3 +13,5 @@ run_spr = spr_enemy_1_run
 
 attack_timer = 200
 max_attack_timer = 200
+
+attack_range = 160

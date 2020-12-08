@@ -9,7 +9,9 @@ if x > CURRPLAYER.x + room_width or x < CURRPLAYER.x - room_width{
 
 if collision_circle(x,y,5,CURRPLAYER, 0, false){
 	if is_bad {
-		PLAYERHP -= damage
+		if PLAYERHP > 0 {
+			PLAYERHP -= damage
+		}
 		instance_destroy()
 	}
 }

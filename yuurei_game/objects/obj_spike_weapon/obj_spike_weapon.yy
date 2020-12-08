@@ -6,7 +6,7 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": {
     "name": "obj_ranged_weapon",
     "path": "objects/obj_ranged_weapon/obj_ranged_weapon.yy",

@@ -1,7 +1,7 @@
 
 event_inherited();
 
-if attack {
+if attack and is_near {
 	
 	bullet = instance_create_depth(x,y,depth,projectile)
 	bullet.is_bad = true

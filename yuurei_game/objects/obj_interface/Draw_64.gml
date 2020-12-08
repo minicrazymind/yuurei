@@ -10,7 +10,7 @@ if room == rm_game or room == rm_game_2{
 	draw_roundrect(INTERFACESTART,16, 431, 32, false)
 	draw_set_color(c_fuchsia)
 	
-	draw_roundrect(INTERFACESTART,16, PLAYERHP, 32, false)
+	draw_roundrect(INTERFACESTART,16, INTERFACESTART + PLAYERHP, 32, false)
 	
 	draw_text(8, 26, "HP")
 	
@@ -21,7 +21,7 @@ if room == rm_game or room == rm_game_2{
 	
 	draw_roundrect(INTERFACESTART,40, PLAYERMANA, 48, false)
 	
-	draw_text(INTERFACESTART,80, "¥: " + string(PLAYERMONEY))
+	draw_text(INTERFACESTART,60, "MONEY: " + string(PLAYERMONEY))
 	
 	//gun box 
 	draw_set_color(c_gray)

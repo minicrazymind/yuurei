@@ -2,7 +2,7 @@
 depth = -y
 
 
-if point_distance(x,y,follow_targ.x,follow_targ.y) > 160{
+if point_distance(x,y,follow_targ.x,follow_targ.y) > attack_range{
 
 	path_x = follow_targ.x
 	path_y = follow_targ.y
@@ -11,14 +11,13 @@ if point_distance(x,y,follow_targ.x,follow_targ.y) > 160{
 	}
 	sprite_index = run_spr
 	
-	is_near = true
 	
 } else{
 
 	path_x = x
 	path_y = y
 	sprite_index = idle_spr
-
+	is_near = true
 }
 
 if is_near {

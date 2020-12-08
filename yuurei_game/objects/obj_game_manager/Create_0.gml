@@ -1,6 +1,8 @@
 globalvar INTERFACESTART; 
 INTERFACESTART= 50
 
+maxhp = 431
+
 globalvar PLAYERHP;
 PLAYERHP = 431
 

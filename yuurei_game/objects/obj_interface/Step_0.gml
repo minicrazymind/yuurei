@@ -2,7 +2,6 @@ if room == rm_game or room == rm_game_2{
 	curr_weapon = CURRWEAPON
 	curr_pet = CURRPET
 	
-	show_debug_message(CURRWEAPON.projectile)
 	gun_spr = CURRWEAPON.sprite_index
 	test_proj = instance_create_depth(0,0,-1,CURRWEAPON.projectile)
 	gun_ammo = CURRWEAPON.projectile.sprite_index
@@ -142,7 +141,7 @@ if BUYPET{
 			break;
 	}
 	
-	if keyboard_check_pressed(ord("X")) and curr_pet != CURRPET{
+	if keyboard_check_pressed(ord("X")) and curr_pet != CURRPET and room = rm_base{
 		instance_destroy(CURRPET)
 		CURRPET = curr_pet
 		instance_create_depth(obj_zoella.x, obj_zoella.y, -1, CURRPET)

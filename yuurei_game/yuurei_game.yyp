@@ -22,6 +22,7 @@
     {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},"order":13,},
     {"id":{"name":"spr_portal_next_room","path":"sprites/spr_portal_next_room/spr_portal_next_room.yy",},"order":38,},
     {"id":{"name":"spr_dart","path":"sprites/spr_dart/spr_dart.yy",},"order":29,},
+    {"id":{"name":"obj_enemy_spawner","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"order":39,},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":4,},
     {"id":{"name":"MoveCollide","path":"scripts/MoveCollide/MoveCollide.yy",},"order":0,},
     {"id":{"name":"obj_no_move","path":"objects/obj_no_move/obj_no_move.yy",},"order":5,},

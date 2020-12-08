@@ -9,3 +9,5 @@ mspd = 1
 attack_timer = 180
 max_attack_timer = 180
 attack = false
+
+attack_range = 100

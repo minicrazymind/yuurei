@@ -25,3 +25,5 @@ attack = false
 move_left = false
 move_right = false
 facing_right = false
+
+attack_range = 160

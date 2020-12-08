@@ -1,5 +1,5 @@
 globalvar TILE_SIZE;
-TILE_SIZE = 16
+TILE_SIZE = 8
  
 globalvar GRID_WIDTH;
 globalvar GRID_HEIGHT;

@@ -9,11 +9,7 @@ if keyboard_check_pressed(ord("L")) {
 }
 
 
-if PLAYERHP < 0 { //Here just cuz lol
-	PLAYERHP = 0	
-}
-
-if room == rm_game{
+if room == rm_game or room == rm_game_2{
 	if keyboard_check_pressed(vk_escape){
 		PAUSED = !PAUSED
 		if PAUSED{
@@ -24,6 +20,13 @@ if room == rm_game{
 			instance_activate_all()
 		}
 	}
+	
+	
+	if PLAYERHP <= 0 { //Here just cuz lol
+		PLAYERHP = 0	
+	}	
+	
+
 	
 	//DEV WEAPON SPAWNER
 	if keyboard_check_pressed(ord("Q")) { //NOTE TO SELF: Later, fix switching weapons so that ammo of prev wep is kept
@@ -67,7 +70,8 @@ if room == rm_base{
 		room_goto(rm_game)
 		obj_zoella.x = x_init
 		obj_zoella.y = y_init
-		instance_create_depth(x_init, y_init, 0, CURRPET)
+		CURRPET.x = x_init
+		CURRPET.y = y_init
 	}
 }
 
@@ -86,4 +90,5 @@ if room == rm_start{
 		}
 	}
 }
+
 
