@@ -1,7 +1,7 @@
 {
   "resources": [
     {"id":{"name":"obj_ranged_weapon","path":"objects/obj_ranged_weapon/obj_ranged_weapon.yy",},"order":12,},
-    {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":3,},
+    {"id":{"name":"rm_game_2","path":"rooms/rm_game_2/rm_game_2.yy",},"order":3,},
     {"id":{"name":"obj_ghostie","path":"objects/obj_ghostie/obj_ghostie.yy",},"order":36,},
     {"id":{"name":"spr_lightning_weapon","path":"sprites/spr_lightning_weapon/spr_lightning_weapon.yy",},"order":32,},
     {"id":{"name":"spr_pet_frame","path":"sprites/spr_pet_frame/spr_pet_frame.yy",},"order":28,},
@@ -19,6 +19,7 @@
     {"id":{"name":"spr_zoella_idle","path":"sprites/spr_zoella_idle/spr_zoella_idle.yy",},"order":2,},
     {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},"order":13,},
     {"id":{"name":"spr_dart","path":"sprites/spr_dart/spr_dart.yy",},"order":29,},
+    {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":4,},
     {"id":{"name":"MoveCollide","path":"scripts/MoveCollide/MoveCollide.yy",},"order":0,},
     {"id":{"name":"obj_no_move","path":"objects/obj_no_move/obj_no_move.yy",},"order":5,},
     {"id":{"name":"obj_no_move_small","path":"objects/obj_no_move_small/obj_no_move_small.yy",},"order":21,},
@@ -28,6 +29,7 @@
     {"id":{"name":"spr_basan","path":"sprites/spr_basan/spr_basan.yy",},"order":3,},
     {"id":{"name":"obj_enemy_1_hand","path":"objects/obj_enemy_1_hand/obj_enemy_1_hand.yy",},"order":18,},
     {"id":{"name":"spr_ghostie","path":"sprites/spr_ghostie/spr_ghostie.yy",},"order":36,},
+    {"id":{"name":"spr_portal","path":"sprites/spr_portal/spr_portal.yy",},"order":37,},
     {"id":{"name":"bg_sprite","path":"sprites/bg_sprite/bg_sprite.yy",},"order":0,},
     {"id":{"name":"spr_byakko_idle","path":"sprites/spr_byakko_idle/spr_byakko_idle.yy",},"order":15,},
     {"id":{"name":"tiles_trees","path":"tilesets/tiles_trees/tiles_trees.yy",},"order":3,},
@@ -60,6 +62,7 @@
     {"id":{"name":"obj_shuriken_projectile","path":"objects/obj_shuriken_projectile/obj_shuriken_projectile.yy",},"order":11,},
     {"id":{"name":"spr_rainbow_bullet","path":"sprites/spr_rainbow_bullet/spr_rainbow_bullet.yy",},"order":35,},
     {"id":{"name":"bg_tiles","path":"tilesets/bg_tiles/bg_tiles.yy",},"order":0,},
+    {"id":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"order":37,},
     {"id":{"name":"spr_no_move","path":"sprites/spr_no_move/spr_no_move.yy",},"order":5,},
     {"id":{"name":"obj_zoella","path":"objects/obj_zoella/obj_zoella.yy",},"order":0,},
     {"id":{"name":"Sprite23","path":"sprites/Sprite23/Sprite23.yy",},"order":23,},
@@ -98,6 +101,7 @@
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"rm_base","path":"rooms/rm_base/rm_base.yy",},},
     {"roomId":{"name":"rm_game_debug","path":"rooms/rm_game_debug/rm_game_debug.yy",},},
+    {"roomId":{"name":"rm_game_2","path":"rooms/rm_game_2/rm_game_2.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
   ],
   "Folders": [
