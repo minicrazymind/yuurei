@@ -72,11 +72,15 @@ if room == rm_base{
 if room == rm_start{
 	if mouse_check_button_pressed(mb_left){
 		if point_in_rectangle(mouse_x, mouse_y, 160,453,325,503){ //start
-			room_goto(rm_game)
+			//audio_sound_pitch(snd_selected, random_range(0.8, 1.2))
+			audio_play_sound(snd_selected, 0, false)
+			_fader = instance_create_depth(x,y,0,obj_fade)
+			_fader.room_to_go = rm_game
 		}
 		
 		else if point_in_rectangle(mouse_x, mouse_y, 165,526, 390, 576){ //options
 			room_goto(rm_base)
+			audio_play_sound(snd_selected, 0, false)
 		}
 	}
 }

@@ -21,6 +21,8 @@ if room == rm_game{
 	
 	draw_roundrect(INTERFACESTART,40, PLAYERMANA, 48, false)
 	
+	draw_text(INTERFACESTART,80, "¥: " + string(PLAYERMONEY))
+	
 	//gun box 
 	draw_set_color(c_gray)
 	draw_roundrect(camera_x - 150, camera_y - 95, camera_x - 55, camera_y - 31, false)
