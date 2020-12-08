@@ -12,7 +12,7 @@ else if room == rm_base{
 facing_right = false
 
 hand = instance_create_depth(x,y,0,obj_zoella_hand)
-weapon = instance_create_depth(x,y,0,CURRWEAPON)
+instance_create_depth(x,y,0,CURRWEAPON)
 
 
 run_spr = spr_zoella_run

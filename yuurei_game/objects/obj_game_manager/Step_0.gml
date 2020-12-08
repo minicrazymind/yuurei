@@ -65,7 +65,9 @@ if room == rm_base{
 	
 	if keyboard_check_pressed(ord("G")) {
 		room_goto(rm_game)
-		instance_create_depth(CURRPLAYER.x, CURRPLAYER.y, 0, CURRPET)
+		obj_zoella.x = x_init
+		obj_zoella.y = y_init
+		instance_create_depth(x_init, y_init, 0, CURRPET)
 	}
 }
 
@@ -75,11 +77,11 @@ if room == rm_start{
 			//audio_sound_pitch(snd_selected, random_range(0.8, 1.2))
 			audio_play_sound(snd_selected, 0, false)
 			_fader = instance_create_depth(x,y,0,obj_fade)
-			_fader.room_to_go = rm_game
+			_fader.room_to_go = rm_base
 		}
 		
 		else if point_in_rectangle(mouse_x, mouse_y, 165,526, 390, 576){ //options
-			room_goto(rm_base)
+			//room_goto(rm_base)
 			audio_play_sound(snd_selected, 0, false)
 		}
 	}

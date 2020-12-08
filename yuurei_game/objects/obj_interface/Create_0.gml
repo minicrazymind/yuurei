@@ -8,9 +8,6 @@ camera_y = 768
 min_x = 200
 max_x = min_x + (3*175)
 
-curr_weapon = obj_spike_weapon
-curr_pet = obj_basan
-
 money_spent = 0
 
 c_start = c_white

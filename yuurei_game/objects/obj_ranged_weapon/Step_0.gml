@@ -1,6 +1,6 @@
 depth = user_hand.depth + 1   //Makes sure weapon is behind hand and in front of player sprite
 
-if room == rm_game { //Checks if the gun should be firing and if we're in rm_game
+if room == rm_game or room == rm_game_2{ //Checks if the gun should be firing and if we're in rm_game
 	
 	if mouse_check_button_pressed(mb_left) and is_enemy == false and ready_to_fire and ammo > 0{
 		ready_to_fire = false

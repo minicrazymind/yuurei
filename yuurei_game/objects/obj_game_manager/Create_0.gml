@@ -27,3 +27,6 @@ BUYPET = false
 
 globalvar BUYWEAPON;
 BUYWEAPON = false
+
+x_init = 32
+y_init = 225

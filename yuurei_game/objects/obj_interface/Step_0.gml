@@ -1,3 +1,14 @@
+if room == rm_game or room == rm_game_2{
+	curr_weapon = CURRWEAPON
+	curr_pet = CURRPET
+	
+	show_debug_message(CURRWEAPON.projectile)
+	gun_spr = CURRWEAPON.sprite_index
+	test_proj = instance_create_depth(0,0,-1,CURRWEAPON.projectile)
+	gun_ammo = CURRWEAPON.projectile.sprite_index
+	instance_destroy(test_proj)
+	pet_spr = CURRPET.sprite_index
+}
 
 switch(CURRPET){
 	case obj_basan:

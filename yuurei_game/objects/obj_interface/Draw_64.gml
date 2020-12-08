@@ -1,4 +1,4 @@
-if room == rm_game{
+if room == rm_game or room == rm_game_2{
 	//1366 x 768 is default rm_width & rm_height respectively
 	
 	draw_set_halign(fa_left); //draw left
