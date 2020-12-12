@@ -8,6 +8,11 @@ if keyboard_check_pressed(ord("L")) {
 	room_goto(rm_start)
 }
 
+if (room == rm_game or room == rm_game_2 ) {
+    INGAME = true;
+} else {
+    INGAME = false;
+}
 
 if room == rm_game or room == rm_game_2{
 	if keyboard_check_pressed(vk_escape){
@@ -91,4 +96,22 @@ if room == rm_start{
 	}
 }
 
+if (audio_is_playing(snd_bgm_base) == false) and (room == rm_base){
+    audio_stop_all();
+    audio_play_sound(snd_bgm_base, 1000, false);
 
+//change to new game music
+} else if (audio_is_playing(snd_bgm_game) == false) and (room == rm_game or room == rm_game_2){
+    audio_stop_all();
+    audio_play_sound(snd_bgm_game, 1000, false);
+	
+	
+} /*else if (audio_is_playing(m_rivalry) == false) and (room == rm_start){
+    audio_stop_all();
+    audio_play_sound(m_rivalry, 1000, false);
+}*/
+
+if (INGAME == true and PLAYERHP <= 0) {
+    audio_stop_all();
+    room_goto(rm_end);
+}

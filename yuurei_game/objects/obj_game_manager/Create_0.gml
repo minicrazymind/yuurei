@@ -30,5 +30,18 @@ BUYPET = false
 globalvar BUYWEAPON;
 BUYWEAPON = false
 
+globalvar INGAME;
+INGAME = false;
+
 x_init = 32
 y_init = 225
+
+if room == rm_base{
+	audio_play_sound(snd_bgm_base, 0, true)
+}
+else if room == rm_game or room == rm_game_2{
+	audio_play_sound(snd_bgm_base, 0 ,true)
+}
+else if room == rm_start{
+	//audio_play_sound(x, 0, true)
+}

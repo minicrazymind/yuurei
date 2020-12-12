@@ -63,14 +63,20 @@ switch(CURRWEAPON){
 
 if BUYWEAPON{
 	if keyboard_check_pressed(ord("D")) and obj_shopkeeper.selector_x_w < max_x{
+		audio_play_sound(snd_choose, 0, false)
 		obj_shopkeeper.selector_x_w += 175
 	}
-	//add in sfx for else
+	else if keyboard_check_pressed(ord("D")) and obj_shopkeeper.selector_x_w == max_x{
+		audio_play_sound(snd_nomove, 0, false)
+	}
 		
-	else if keyboard_check_pressed(ord("A")) and min_x < obj_shopkeeper.selector_x_w{
+	if keyboard_check_pressed(ord("A")) and min_x < obj_shopkeeper.selector_x_w{
+		audio_play_sound(snd_choose, 0, false)
 		obj_shopkeeper.selector_x_w -= 175
 	}
-	//add in sfx for else
+	else if keyboard_check_pressed(ord("A")) and min_x == obj_shopkeeper.selector_x_w{
+		audio_play_sound(snd_nomove, 0, false)
+	}
 	
 	switch (obj_shopkeeper.selector_x_w){
 		case 200:
@@ -102,22 +108,31 @@ if BUYWEAPON{
 	}
 	
 	if keyboard_check_pressed(ord("X")) and curr_weapon != CURRWEAPON{
+		audio_play_sound(snd_item_select, 0, false)
 		CURRWEAPON = curr_weapon
 		PLAYERMONEY -= money_spent
-	//sfx if curr_weapon == CURRWEAPON
+	}
+	else if keyboard_check_pressed(ord("X")) and curr_weapon == CURRWEAPON{
+		audio_play_sound(snd_nobuy, 0, false)
 	}
 }
 
 if BUYPET{
 	if (keyboard_check_pressed(ord("D")) and (obj_nekoi.selector_x < max_x)){
+		audio_play_sound(snd_choose, 0, false)
 		obj_nekoi.selector_x += 175
 	}
-	//add in sfx for else
+	else if keyboard_check_pressed(ord("D")) and obj_shopkeeper.selector_x_w == max_x{
+		audio_play_sound(snd_nomove, 0, false)
+	}
 	
-	else if (keyboard_check_pressed(ord("A")) and (min_x < obj_nekoi.selector_x)){
+	if (keyboard_check_pressed(ord("A")) and (min_x < obj_nekoi.selector_x)){
+		audio_play_sound(snd_choose, 0, false)
 		obj_nekoi.selector_x -= 175
 	}
-	//add in sfx for else
+	else if keyboard_check_pressed(ord("A")) and min_x == obj_shopkeeper.selector_x_w{
+		audio_play_sound(snd_nomove, 0, false)
+	}
 	
 	switch (obj_nekoi.selector_x){
 		case 200:
@@ -141,13 +156,16 @@ if BUYPET{
 			break;
 	}
 	
-	if keyboard_check_pressed(ord("X")) and curr_pet != CURRPET and room = rm_base{
+	if keyboard_check_pressed(ord("X")) and curr_pet != CURRPET{
+		audio_play_sound(snd_item_select, 0, false)
 		instance_destroy(CURRPET)
 		CURRPET = curr_pet
 		instance_create_depth(obj_zoella.x, obj_zoella.y, -1, CURRPET)
 		PLAYERMONEY -= money_spent
 	}
-	//sfx if curr_pet == CURRPET
+	else if keyboard_check_pressed(ord("X")) and curr_pet == CURRPET{
+		audio_play_sound(snd_nobuy, 0, false)
+	}
 }
 
 
