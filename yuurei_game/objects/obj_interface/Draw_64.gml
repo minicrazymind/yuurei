@@ -133,3 +133,15 @@ if room == rm_base{
 
 	}
 }
+
+
+
+if (room == rm_end) {
+    draw_set_font(fnt_title_screen);
+    draw_set_color(c_white);
+    draw_set_halign(fa_center);
+    draw_text(camera_x/2, camera_y/2 - 20, "GAME OVER");
+    draw_set_font(fnt_title_screen);
+    draw_text(camera_x/2, camera_y/2 + 20, "Press space to play again");
+}
+

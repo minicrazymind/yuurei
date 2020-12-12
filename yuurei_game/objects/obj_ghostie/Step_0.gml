@@ -10,6 +10,7 @@ if attack and is_near {
 }
 
 
+
 if hp <= 0 {
 	instance_destroy()	
 	PLAYERMONEY += irandom_range(1, 4) 

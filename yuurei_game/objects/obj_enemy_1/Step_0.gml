@@ -4,7 +4,9 @@ randomize()
 
 if attack {
 	weapon.is_triggered = true
+	attack = false
 }
+
 
 
 if hp <= 0 {

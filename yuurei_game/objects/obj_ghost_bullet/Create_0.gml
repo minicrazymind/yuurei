@@ -8,7 +8,7 @@ target_y = mouse_y
 
 speed = 6     //Move speed of projectile
 
-damage = 5
+damage = 100
 
 direction = point_direction(x, y, target_x, target_y) //Direction we go
 

@@ -15,3 +15,4 @@ attack_timer = 200
 max_attack_timer = 200
 
 attack_range = 160
+

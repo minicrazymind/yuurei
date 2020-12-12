@@ -33,6 +33,7 @@ if attack_timer >= 0 {
 }
 
 if attack_timer <= 0 {
+	shoot_sound = true
 	attack = true
 	attack_timer = -1
 	attacking = false

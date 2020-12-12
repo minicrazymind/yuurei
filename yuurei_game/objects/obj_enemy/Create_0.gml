@@ -27,3 +27,5 @@ move_right = false
 facing_right = false
 
 attack_range = 160
+
+shoot_sound = false

@@ -47,3 +47,10 @@ if !BUYPET and !BUYWEAPON{
 	move_right = false
 }
 
+
+if die == true {
+	instance_destroy(weapon)
+	instance_destroy(hand)
+	instance_destroy(CURRPET)
+	instance_destroy()
+}

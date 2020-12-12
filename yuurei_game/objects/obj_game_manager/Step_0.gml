@@ -42,12 +42,6 @@ if room == rm_game or room == rm_game_2{
 			obj_interface.gun_ammo = spr_spike_projectile
 				
 		} else if CURRWEAPON.wep_name == "Spike" {
-			instance_destroy(CURRWEAPON)	
-			CURRWEAPON = instance_create_depth(9000,9000,0,obj_dart_weapon)
-			obj_interface.gun_spr = spr_dart
-			obj_interface.gun_ammo = spr_dart
-			
-		} else if CURRWEAPON.wep_name == "Dart"{
 			instance_destroy(CURRWEAPON)
 			CURRWEAPON = instance_create_depth(9000,9000,0,obj_mod_wep_1)
 			obj_interface.gun_spr = spr_lightning_weapon
@@ -106,12 +100,21 @@ if (audio_is_playing(snd_bgm_base) == false) and (room == rm_base){
     audio_play_sound(snd_bgm_game, 1000, false);
 	
 	
-} /*else if (audio_is_playing(m_rivalry) == false) and (room == rm_start){
+} else if (audio_is_playing(snd_start_music) == false) and (room == rm_start){
     audio_stop_all();
-    audio_play_sound(m_rivalry, 1000, false);
-}*/
+    audio_play_sound(snd_start_music, 1000, false);
+}
 
 if (INGAME == true and PLAYERHP <= 0) {
     audio_stop_all();
+	CURRPLAYER.die = true
+	
     room_goto(rm_end);
+}
+
+if room = rm_end {
+	if keyboard_check_pressed(vk_space) {
+		room_goto(rm_base)
+		CURRWEAPON = obj_shuriken_weapon
+	}
 }

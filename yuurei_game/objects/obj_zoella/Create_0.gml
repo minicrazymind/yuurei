@@ -2,6 +2,8 @@ event_inherited()
 
 
 
+die = false
+
 facing_right = false
 
 hand = instance_create_depth(x,y,0,obj_zoella_hand)
@@ -16,5 +18,8 @@ if room == rm_game{
 else if room == rm_base{
 	mspd = 1.5
 	CURRWEAPON = instance_create_depth(x,y,0,CURRWEAPON)
+	weapon = CURRWEAPON
 }
+
+PLAYERHP = obj_game_manager.maxhp
 
